@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>ST TOWER</title>
+<meta name="description" content="ST系アプリのスマホ版ランチャー">
+<meta name="theme-color" content="#0b0e24">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ST TOWER">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="tower" aria-label="STタワー"></div>
+
+<div id="indicator" aria-hidden="true"><span class="ind-arrow">▲</span><span id="ind-floor">RF</span></div>
+
+<section id="sheet" hidden aria-live="polite"></section>
+
+<div id="zoom" hidden></div>
+
+<section id="view" hidden></section>
+
+<div id="install" hidden></div>
+<div id="toast" hidden></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
